@@ -5,3 +5,4 @@ DNS yalnızca web siteleri için değildir ve birden fazla DNS kaydı türü var
 	3- CNAME Kayıt: Bu kayıtlar başka bir alan adına çözümlenir. Örneğin buy.MySite.com CNAME ile shops.shopify.com'a dönüşür.
 	4- MX Kayıt: Bu recordlar, sorguladığınız etki alanının e-postasını işleyen sunucuların adresine çözümlenir.
 	5- TXT Kayıt: Metin tabanlı verilerin depolanabileceği serbest metin alanlarıdır. TXT kayıtlarının birden fazla kullanımı vardır, ancak bazı yaygın olanlar alan adına bir e-posta gönderme yetkisine sahip sunucuları listelemek olabilir. Ayrıca, üçüncü taraf hizmetlerine kaydolurken alan adının sahipliğini doğrulamak için de kullanılabilirler.
+Kaynakça:https://tryhackme.com/
