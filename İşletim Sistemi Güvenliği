@@ -16,3 +16,4 @@ Bazı Zafiyetler
 
 3-Access to Malicious Programs(Kötü Amaçlı Programlara Erişim): Malicious Programlar Confidentiality,Integrity ve availabilitye saldırmanın yollarındandır. Örnek olarak Trojan Horses verilebilir. Trojan Horsesda saldırgan sisteminize erişir ve datalarınızı okuyup değiştirebilir. O zaman Trojan,Confidentialitye ve Integritye zarar verir.
 Bazı programlar ise Availabilitye saldırırlar. Örnek olarak ransomware verilebilir. Ransomware kullanıcının dosyalarını şifreler ve bu sayede dosyalar okunamaz dosyaların açılması karşılığında sizden fidye talep edebilirler.
+Kaynakça:https://tryhackme.com/
