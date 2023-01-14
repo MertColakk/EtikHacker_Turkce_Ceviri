@@ -16,3 +16,4 @@ Switchler, bilgisayarlar, yazıcılar veya ethernet kullanan ağ iletişimi öze
 
 Router(Yönlendirici)
 Router,ağları bağlar ve aralarında veri iletir. Bunu routing kullanarak yapar. Routing, ağlar arasında seyahat eden verilerin sürecine verilen addır. Routing, bu verilerin başarıyla teslim edilebilmesi için ağlar arasında alternatif yollar oluşturur. Eğer birden fazla yol ile kullanılırsa kullanışlıdır.
+Kaynakça:https://tryhackme.com/
