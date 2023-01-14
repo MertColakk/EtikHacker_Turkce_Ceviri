@@ -1,0 +1,12 @@
+Bağlantılar: Verilerin değiş tokuş edilebileceği uygun olan şekilde sınıflandırma yapmasına olanak veren önemli bir noktadır.
+Bu Bağlantılar neyin nereye bağlanacağını sorgular eğer uyumlu değilse, buraya bağlanamaz. Ağ aygıtları, birbirleriyle iletişim kurarken katı kurallar uygulamak için bağlantı noktalarını da kullanır. Bir bağlantı kurulduğunda, bir cihaz tarafından gönderilen veya alınan tüm veriler bu bağlantı noktaları üzerinden gönderilecektir. Bilgisayarda, bağlantı noktaları 0 ile 65535 arasında sayısal bir değerdir. Uygulamaları, yazılımları ve davranışları standart bir kurallar kümesiyle ilişkilendirilmektedir bu sebepten bir verinin izini kaybetme olasılığımız yoktur.
+Tüm web tarayıcılarının artık ortak bir kuralı paylaşır, veriler 80 numaralı bağlantı noktası üzerinden gönderilir. 
+Web verileri için standart kural 80 numaralı bağlantı noktası olsa da, diğer birkaç protokole standart bir kural atanmıştır. 0 ve 1024 ün içinden biri ortak bağlantı noktası oluşturma niteliğine sahiptir. Bazı port örnekleri:
+	1- FTP-Bağlantısının Sayısı=21: Bu protokol, istemci-sunucu modeli üzerine kurulu bir dosya paylaşım uygulaması tarafından kullanılır, yani dosyaları merkezi bir konumdan indirebilirsiniz.
+	2- SSH-Bağlantısının Sayısı=22: Bu protokol, yönetim için metin tabanlı bir arayüz aracılığıyla sistemlere güvenli bir şekilde giriş yapmak için kullanılır.
+	3- HTTP-Bağlantısının Sayısı=80: Bir siteye girmeyi,yazı indirmeyi,video izlemeyi gibi olayları sağlar.
+	4- HTTPS-Bağlantısının Sayısı=443: HTTP'nin verileri şifreylen güvenli versiyonudur.
+	5- SMB(Server Message Block)-Bağlantısının Sayısı=445: FTP'ye benzerdir fakat SMB dosyaların yanısıra, yazıcı gibi cihazları da paylaşmanıza izin verir.
+	6- RDP(Remote Desktop Protocol)-Bağlantısının Sayısı=3389: Bu protokol, görsel bir masaüstü arabirimi kullanarak bir sistemde oturum açmanın güvenli bir yoludur (SSH protokolünün metin tabanlı sınırlamalarının aksine görsel arayüz sunarak daha hoş bir görünüm sağlar).
+	
+İlk 1024 portun amaçlarının olduğu link: http://www.vmaxx.net/techinfo/ports.htm
