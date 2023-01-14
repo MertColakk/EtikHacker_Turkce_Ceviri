@@ -1,0 +1,23 @@
+Tehdit Modelleme ve Olay Yanıtı 
+Tehdit modellemesi, bir kuruluşun bilgi teknolojisi altyapısında ve hizmetlerinde mevcut olan güvenlik protokollerini gözden geçirme, iyileştirme ve test etme sürecidir.
+Tehdit modelleme sürecinin kritik bir aşaması, bir uygulamanın veya sistemin karşılaşabileceği olası tehditleri, bir sistemin veya uygulamanın savunmasız olabileceği güvenlik açıklarını tanımlamaktır.
+Süreç:
+	1- Hazırlık
+	2- Belirleme
+	3- Önlem
+	4- Raporlama
+Bununla birlikte, özel bir ekiple sürekli gözden geçirilmesi ve tartışılması gereken karmaşık bir süreçtir. Etkili bir tehdit modeli şunları içerir:
+	1- Tehdit istihbaratı
+    	2- Varlık tanımlama
+    	3- Önlem kapasitesi
+    	4- Risk değerlendirmesi
+
+STRIDE(Kimlik sahteciliği, Verilerle oynama, Reddetme tehditleri, Bilginin ifşa edilmesi, Hizmet Reddi ve Ayrıcalıkların Yükseltilmesi)'nin altı ana maddesi:
+	1- Spoofing(Aldatma): Bu madde, bir sisteme erişen isteklerin ve kullanıcıların kimliğini doğrulamanızı gerektirir. Adres sahteciliği, kötü niyetli bir tarafın kendisini yanlış bir şekilde başka biri olarak tanımlamasını içerir.
+Erişim anahtarları (API anahtarları gibi) veya şifreleme yoluyla imzalar bu tehdidin giderilmesine yardımcı olur.
+	2- Tampering(Müdahale): Bir sisteme veya uygulamaya kurcalamaya karşı önlemler sağlayarak, verilerin bütünlüğünün sağlanmasına yardımcı olursunuz. Erişilen veriler ayrılmaz ve doğru tutulmalıdır.
+Örneğin, dükkanlar gıda ürünlerinde mühür kullanır.
+	3- Repudiation(Tanımlama): Bu ilke, bir sistemin veya uygulamanın izleyeceği etkinlik günlüğü gibi hizmetlerin kullanımını belirler.
+	4- Information Disclosure(Bilgilerin İfşası): Birden çok kullanıcının bilgilerini işleyen uygulamaların veya hizmetlerin, yalnızca sahibiyle ilgili bilgileri gösterecek şekilde uygun şekilde yapılandırılması gerekir.
+	5- Denial of Service(Hizmet reddi): Uygulamalar ve hizmetler sistem kaynaklarını kullanır, bu iki şeyin yerinde önlemleri olmalıdır, böylece uygulamanın / hizmetin kötüye kullanılması tüm sistemin çökmesine neden olmaz.
+	6- Elevation of Privilege(Ayrıcalıkların Yükselmesi): Bu, bir uygulama veya hizmet için en kötü senaryodur. Bu, bir kullanıcının yetkilerini daha yüksek bir seviyeye, yani bir yöneticiye yükseltebildiği anlamına gelir. Bu senaryo genellikle daha fazla istismara veya bilginin açığa çıkmasına neden olur.
