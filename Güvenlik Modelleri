@@ -1,0 +1,12 @@
+Security Models(Güvenlik Modelleri)
+CIA üçlüsünün üç unsurunu elde etmek için kullanılan bazı popüler ve etkili güvenlik modelleri:
+
+1-The Bell-La Padula Model: Gizliliği sağlamak için kullanılır. Bu model, herkesin sorumluluklarının / rollerinin iyi tanımlandığı, kullanıldığı bir kuruluşun hiyerarşik yapısı gibi birkaç varsayıma sahiptir. Model, temelde veri parçalarına erişim sağlayarak çalışır. Bu model "not down, no read up" kuralını kullanır.
+Avantajları: Uygulaması ve anlaşılması kolaydır ve başarılı olduğu kanıtlanmıştır. Bu modeldeki politikalar gerçek hayattaki kuruluşların hiyerarşilerine çoğaltılabilir (veya tam tersi).
+Dezavantajları: Model, kuruluş içinde büyük miktarda güvene dayanır. Bir kullanıcının bir nesneye erişimi olmasa bile, varlığını bileceklerdir - bu nedenle bu açıdan gizli değildir.
+->Governmental and Military.
+
+2-Biba Model: CIA'nın integrity kısmı içindir. Bell-La Padula Model ile eşdeğerdir. Bu model, kuralı "yazma yok, aşağı okuma yok" olarak özetlenebilen nesnelere (verilere) ve konulara (kullanıcılar) uygular. Bu kural, öznelerin kendi düzeylerindeki veya altındaki nesnelere içerik oluşturabileceği veya yazabileceği, ancak yalnızca öznenin düzeyinin üzerindeki nesnelerin içeriğini okuyabileceği anlamına gelir.
+Avantajları: Bu modelin uygulanması kolaydır. Bell-La Padula modelinin sınırlamalarını hem gizlilik hem de veri bütünlüğünü ele alarak çözer. 
+Dezavantajları: Birçok erişim ve nesne düzeyi olacaktır. Güvenlik kontrolleri uygulanırken bazı şeyler kolayca göz ardı edilebilir. Genellikle bir işletme içinde gecikmelere neden olur. Örneğin bir doktor bu modelle hastanede hemşire tarafından yapılan notları okuyamaz.
+Biba modeli, bütünlüğün gizlilikten daha önemli olduğu organizasyonlarda veya durumlarda kullanılır. Örneğin, yazılım geliştirmede, geliştiriciler yalnızca işleri için gerekli olan koda erişebilir. Veri tabanları vb. gibi kritik bilgi parçalarına erişmeleri gerekmeyebilir. 
