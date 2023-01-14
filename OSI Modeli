@@ -1,0 +1,34 @@
+OSI Model
+OSI modeli(Open Systems Interconnection Model), ağ oluşturmada kullanılan mutlak bir temel modeldir.  Bu kritik model, ağa bağlı tüm cihazların verileri nasıl göndereceğini, alacağını ve yorumlayacağını belirleyen bir çerçeve sağlar. OSI modelinin temel faydalarından biri, cihazların diğer cihazlarla iletişim kurarken bir ağ üzerinde farklı işlevlere ve tasarımlara sahip olabilmesidir. OSI modelinin tekdüzeliğini izleyen bir ağ üzerinden gönderilen veriler diğer cihazlar tarafından anlaşılabilir. OSI modeli, yedi katmandan oluşur. Her bir katmana encapsulation denir.
+
+7. Katman - Application(Uygulama): Kullanıcının gönderilen veya alınan verilerle nasıl etkileşime girmesi gerektiğini belirlemek için protokollerin ve kuralların uygulandığı katman. GUI(Arayüz) bulunur.
+
+6. Katman - Presentation(Sunum): Standardizasyonun gerçekleşmeye başladığı katmandır. aBu katman, katman 7 için çevirmen rolü üslenir. Veri şifreleme gibi güvenlik özellikleri bu katmanda gerçekleşir. Alıcı bilgisayar farklı formatta da gönderilen bir dosyayı anlayıp yorumlayabilecektir. Yani farklı e-posta sağlayıcıları kullansak da aynı içeriğe sahiptirler.
+
+5. Katman - Session(Oturum): Oturum katmanı da denir. Verilerin hedeflendiği diğer bilgisayarla bağlantı kurmaya başlar. Bir bağlantı kurulduğunda, bir oturum oluşturulur. Bu bağlantı etkinken, oturum da etkindir. Veriler gönderilmeden ve alınmadan önce aynı sayfada olduklarından emin olmak için iki bilgisayarı eşitler. Bu denetimler yapıldıktan sonra, oturum katmanı gönderilen verileri daha küçük veri parçalarına bölmeye ve bu parçaları (paketleri) birer birer göndermeye başlar. Bölmeye başlamasının sebebi, eğer bağlantı kesilirse, verilerin tamamı değil de yalnızca henüz gönderilmemiş olan kısmının yeniden gönderilmesi gerekmektedir. Burda dikkat edilmesi gereken unsur, oturumların benzersiz olmasıdır yani veriler farklı oturumlar üzerinden geçemez.
+
+4. Katman - Transport(Taşıma): Bir ağ üzerinden veri aktarımının en önemli katmanıdır ve anlaşılması biraz zordur. Veriler cihazlar arasında gönderildiğinde, çeşitli faktörlere dayanarak karar verilen iki farklı protokolden birini izler:
+	1- TCP(The Transmission Control Protocol): Güvenilirlik ve garanti göz önünde bulundurularak tasarlanmıştır. Bu protokol, verilerin gönderilmesi ve alınması için gereken süre boyunca iki cihaz arasında stabil bir bağlantı sağlar. Hata denetimi görevini de yapar, TCP'nin session katmanındaki küçük parçalardan gönderilen verilerin daha sonra aynı sırayla alınıp tekrar birleştirilmesi sonucu hata olup olmadığını garantiler.
+	TCP'nin avantajları:
+		1- Verilerin bütünlüğünü garantiler.
+		2- Birbirine veri yüklemesini önlemek için iki cihazı birbiriyle senkronize eder.
+		3- Güvenilirlik için çok daha fazla işlem yapar.
+	TCP'nin Dezavantajları:
+		1-İki cihaz arasında güvenilir bir bağlantı gerektirir. Küçük bir veri parçası alınmazsa, veri 			 			 yığınının tamamı kullanılamaz.
+		2-Yavaş bir bağlantıya sebep olur, bağlantı her zaman alıcı bilgisayardan çıkacağı için başka bir aygıtta darboğaza neden olabilir.
+		3- TCP, UDP'den önemli ölçüde daha yavaştır, çünkü bu protokolü kullanan cihazlar tarafından daha fazla iş yapılması gerekir.
+	2- UDP(User Datagram Protocol): TCP protokolü kadar gelişmiş değildir. TCP tarafından sunulan hata kontrolü ve güvenilirlik gibi birçok özelliğe sahip değildir. UDP üzerinden gönderilen herhangi bir veri, oraya ulaşsa da ulaşmasa da bilgisayara gönderilir. İki cihaz arasında senkronizasyon veya garanti yoktur.
+	UDP'nin avantajları:
+		1- TCP'den daha hızlı.
+		2- Paketlerin ne kadar hızlı gönderileceği üzerinde herhangi bir denetim olup olmadığına karar vermek için uygulama katmanından (kullanıcı yazılımı) ayrılır.
+		3- TCP gibi sürekli bir bağlantı kurmaz.
+	UDP'nin dezavantajları:
+		1- UDP, verilerin alınıp alınmadığını umursamaz.
+		2- Yazılım geliştiriciler için oldukça esnektir.
+		3- Unstable bağlantılar yüzünden son kullanıcı da olumlu etkisi yoktur.
+
+3. Katman - Network(Ağ): Verilerin yönlendirilmesi ve yeniden birleştirilmesinin büyüsünün gerçekleştiği yerdirİlk olarak, yönlendirme basitçe bu veri parçalarının gönderilmesi gereken en uygun yolu belirler. En optimal yolun belirlenmesi için OSPF (Open Shortest Path First) ve RIP (Routing Information Protocol) vardır. Bu katmanda işler IP addressi üzerinden işlenir.
+
+2. Katman - Data Link(Veri Bağlantısı): Verilerin iletimi için uygun bir biçimde yönlendirecek bir ortam sunmak veri bağlantı katmanının işidir.
+
+1. Katman - Physical(Fiziksel): Bu katman ağda kullanılan donanımın fiziksel bileşenlerine başvurur ve bulacağınız en düşük katmandır. Cihazlar, ikili numaralandırma sisteminde (1'ler ve 0'lar) birbirleri arasında veri aktarmak için elektrik sinyallerini kullanır. Ağ katmanından bir paket alır ve alıcı uç noktanın fiziksel MAC adresini ekler. Ağ özellikli her bilgisayarın içinde, onu tanımlamak için benzersiz bir MAC adresiyle birlikte gelen bir Network Interface Card(NIC) bulunur.
