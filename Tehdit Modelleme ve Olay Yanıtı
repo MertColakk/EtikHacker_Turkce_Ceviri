@@ -21,3 +21,4 @@ Erişim anahtarları (API anahtarları gibi) veya şifreleme yoluyla imzalar bu 
 	4- Information Disclosure(Bilgilerin İfşası): Birden çok kullanıcının bilgilerini işleyen uygulamaların veya hizmetlerin, yalnızca sahibiyle ilgili bilgileri gösterecek şekilde uygun şekilde yapılandırılması gerekir.
 	5- Denial of Service(Hizmet reddi): Uygulamalar ve hizmetler sistem kaynaklarını kullanır, bu iki şeyin yerinde önlemleri olmalıdır, böylece uygulamanın / hizmetin kötüye kullanılması tüm sistemin çökmesine neden olmaz.
 	6- Elevation of Privilege(Ayrıcalıkların Yükselmesi): Bu, bir uygulama veya hizmet için en kötü senaryodur. Bu, bir kullanıcının yetkilerini daha yüksek bir seviyeye, yani bir yöneticiye yükseltebildiği anlamına gelir. Bu senaryo genellikle daha fazla istismara veya bilginin açığa çıkmasına neden olur.
+Kaynakça:https://tryhackme.com/
