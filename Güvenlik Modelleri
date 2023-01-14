@@ -10,3 +10,4 @@ Dezavantajları: Model, kuruluş içinde büyük miktarda güvene dayanır. Bir 
 Avantajları: Bu modelin uygulanması kolaydır. Bell-La Padula modelinin sınırlamalarını hem gizlilik hem de veri bütünlüğünü ele alarak çözer. 
 Dezavantajları: Birçok erişim ve nesne düzeyi olacaktır. Güvenlik kontrolleri uygulanırken bazı şeyler kolayca göz ardı edilebilir. Genellikle bir işletme içinde gecikmelere neden olur. Örneğin bir doktor bu modelle hastanede hemşire tarafından yapılan notları okuyamaz.
 Biba modeli, bütünlüğün gizlilikten daha önemli olduğu organizasyonlarda veya durumlarda kullanılır. Örneğin, yazılım geliştirmede, geliştiriciler yalnızca işleri için gerekli olan koda erişebilir. Veri tabanları vb. gibi kritik bilgi parçalarına erişmeleri gerekmeyebilir. 
+Kaynakça:https://tryhackme.com/
