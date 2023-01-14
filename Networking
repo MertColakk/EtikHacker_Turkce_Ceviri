@@ -19,3 +19,4 @@ MAC adreslerinin bir sıkıntısı spoofing(sahtekarlık) olarak bilinen fake ve
 
 PING(ICMP)
 Ping şu an en çok kullanılan temel ağ araçlarından biridir. Ping, aygıtların arasındaki bağlantının performansını (örneğin, bağlantının var olup olmadığını veya güvenilir olup olmadığını) belirlemek için ICMP (Internet Denetim İletisi Protokolü) paketlerini kullanır. ping yapabilme özelliği Windows ve linux gibi işletim sistemlerinde hazırdır. ping hedefIp ile kullanılabilir.
+Kaynakça:https://tryhackme.com/
