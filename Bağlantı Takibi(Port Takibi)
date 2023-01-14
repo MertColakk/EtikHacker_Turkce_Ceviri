@@ -6,3 +6,4 @@ Port takibi, router aracılığı ile yapılır. Güvenlik duvarları trafiğin 
 	2- Stateless(Aşamasız): Taek tek paketlerin kabul edilebilir olup olmadığını belirlemek için statik bir kurallar kümesi kullanır. Bu güvenlik duvarları alternatiflerden çok daha az kaynak kullanırken, çok hantaldırlar. Ancak, bu güvenlik duvarları bir dizi ana bilgisayardan büyük miktarda trafik alırken mükemmeldir(Örneğin DDoS).
 
 NOT: Stateful ve Stateless için yeterinci iyi kelime bulamadığım için bunu kullandım. Eğer hali hazırda kullanılan kelimeler varsa iletebilirseniz sevinirim.
+Kaynakça:https://tryhackme.com/
