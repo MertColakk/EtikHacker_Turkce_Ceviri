@@ -1,0 +1,5 @@
+DHCP(Dynamic Host Configuration Protocol)(Dinamik Ana Bilgisayar Yapılandırma Protokolü)
+IP adresleri el ile, bir aygıta fiziksel olarak girilerek veya otomatik olarak ve en yaygın olarak DHCP (Dynamic Host Configuration Protocol) sunucusu kullanılarak atanabilir. 
+Bir aygıt ağa bağlandığında, kendisine el ile bir IP adresi atanmamışsa, ağda herhangi bir DHCP sunucusunun olup olmadığını görmek için bir istek (DHCP Discover) gönderir. 
+DHCP sunucusu daha sonra aygıtın kullanabileceği bir IP adresiyle yanıt verir (DHCP Offer). 
+Aygıt daha sonra sunulan IP Adresini (DHCP Request) istediğini onaylayan bir yanıt gönderir ve son olarak, DHCP sunucusu bunun tamamlandığını onaylayan bir yanıt gönderir ve aygıt IP Adresini (DHCP ACK) kullanmaya başlayabilir.
