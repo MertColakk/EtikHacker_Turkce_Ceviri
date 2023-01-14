@@ -1,0 +1,9 @@
+CIA Üçlüsü
+Bu model, uygulandığı verilerin değerini ve dolayısıyla işletmeden ihtiyaç duyduğu ilgiyi belirlemeye yardımcı olmalıdır.
+
+Confidentiality(Gizlilik): Verilerin yetkisiz erişime ve kötüye kullanıma karşı korunmasıdır.
+Integrity(Bütünlük): Değişiklik yapılmadıkça bilgilerin doğru ve tutarlı tutulduğu durumdur. 
+Dikkatsiz erişim ve kullanım, bilgi sistemindeki hatalar veya yetkisiz erişim ve kullanım nedeniyle bilgilerin değişmesi mümkündür. 
+Availability(Kullanılabilirlik): Yetkili kullanıcıların erişmesi gerektiğinde bilgilerin mevcut olması gerektiğidir. 
+Kullanılabilirlik genellikle bir kuruluş için önemli bir ölçüttür. 
+
