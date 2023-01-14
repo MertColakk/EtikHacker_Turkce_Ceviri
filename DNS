@@ -12,3 +12,4 @@ Bir alan adı kaydedilirken, ikinci düzey etki alanı 63 karakter + TLD ile sı
 
 Subdomain(Alt Alan)
 Subdomain, Second-Level Domainin sol tarıfında onu ayırmak için kullanılan bir nokta ile yazılır. Örnek olarak "admin.MySite.com" verilir bu sitede "admin." kısmı subdomaindir. Subdomain, 63 karakterle sınırlıdır ve Second-Level Domain ile aynı oluşturma kısıtlarına sahiptir yalnızca a-z 0-9 ve tireleri kullanabilir. Birden fazla subdomain ayrılabilir. Örnek olarak "telecom.servers.MySite.com" verilebilir ancak "telecom" gibi subdomainlerin uzunluğu 253 karakter veya daha az tutulmalıdır. Alan adınız için oluşturabileceğiniz alt alan adı sayısında bir sınırlama yoktur.
+Kaynakça:https://tryhackme.com/
