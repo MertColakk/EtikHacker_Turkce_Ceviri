@@ -7,3 +7,4 @@ PIM, bir kullanıcının kuruluş içindeki rolünü bir sistemdeki erişim rol�
 PAM, diğer şeylerin yanı sıra bir sistemin erişim rolünün sahip olduğu ayrıcalıkların yönetimidir. Ayrıca, parola yönetimi, denetim politikaları ve bir sistemin karşılaştığı saldırı yüzeyini azaltma gibi güvenlik politikalarının uygulanmasını da kapsar.
 
 Ayrıcalık ve erişim kontrollerini tartışırken gerekli olan şey, en az ayrıcalık ilkesidir. Basitçe, kullanıcılara asgari miktarda ayrıcalık verilmeli ve yalnızca görevlerini yerine getirmeleri için kesinlikle gerekli olanlara verilmelidir. 
+Kaynakça:https://tryhackme.com/
