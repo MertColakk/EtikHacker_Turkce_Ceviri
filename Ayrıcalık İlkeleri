@@ -1,0 +1,9 @@
+Principles of Privileges(Ayrıcalık İlkeleri)
+Bireylere verilen erişim düzeyleri iki temel faktöre göre belirlenir:
+	1- Bireyin organizasyon içindeki rolü/işlevi
+    	2- Sistemde saklanan bilgilerin hassasiyeti
+Bireylerin erişim haklarını atamak ve yönetmek için iki temel kavram kullanılır, Ayrıcalıklı Kimlik Yönetimi (PIM) ve Ayrıcalıklı Erişim Yönetimi (veya kısaca PAM).
+PIM, bir kullanıcının kuruluş içindeki rolünü bir sistemdeki erişim rolüne çevirmek için kullanılır.
+PAM, diğer şeylerin yanı sıra bir sistemin erişim rolünün sahip olduğu ayrıcalıkların yönetimidir. Ayrıca, parola yönetimi, denetim politikaları ve bir sistemin karşılaştığı saldırı yüzeyini azaltma gibi güvenlik politikalarının uygulanmasını da kapsar.
+
+Ayrıcalık ve erişim kontrollerini tartışırken gerekli olan şey, en az ayrıcalık ilkesidir. Basitçe, kullanıcılara asgari miktarda ayrıcalık verilmeli ve yalnızca görevlerini yerine getirmeleri için kesinlikle gerekli olanlara verilmelidir. 
