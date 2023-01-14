@@ -10,3 +10,4 @@ Web verileri için standart kural 80 numaralı bağlantı noktası olsa da, diğ
 	6- RDP(Remote Desktop Protocol)-Bağlantısının Sayısı=3389: Bu protokol, görsel bir masaüstü arabirimi kullanarak bir sistemde oturum açmanın güvenli bir yoludur (SSH protokolünün metin tabanlı sınırlamalarının aksine görsel arayüz sunarak daha hoş bir görünüm sağlar).
 	
 İlk 1024 portun amaçlarının olduğu link: http://www.vmaxx.net/techinfo/ports.htm
+Kaynakça:https://tryhackme.com/
