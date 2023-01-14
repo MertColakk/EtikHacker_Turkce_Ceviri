@@ -19,3 +19,4 @@ Cryptography, verilerin şifrelenmesi ve şifresinin çözülmesi süreçlerine 
 	1-Hassas verileri açık metin olarak göndermek, örneğin HTTPS yerine HTTP kullanarak. HTTP, web'e erişmek için kullanılan protokoldür, HTTPS ise HTTP'nin güvenli sürümüdür. Diğerleri HTTP üzerinden gönderdiğiniz her şeyi okuyabilir, ancak HTTPS'yi okuyamaz.
 	2-Zayıf bir kriptografik algoritmaya güvenmek. 
 	3-Şifreleme işlevleri için varsayılan veya zayıf anahtarların kullanılması. 
+Kaynakça:https://tryhackme.com/
