@@ -1,0 +1,8 @@
+Bağlantı Takibi
+Uygulamaları ve hizmetleri İnternet'e bağlamada önemli bir etkendir. Bağlantı noktası iletme olmadan web sunucuları gibi uygulamalar ve hizmetler yalnızca aynı doğrudan ağ içindeki cihazlar tarafından kullanılabilir.
+Örnek olarak ağ içinde, IP adresi "192.168.1.10" olan sunucu, 80 numaralı bağlantı noktasında bir web sunucusu çalıştırır. Yalnızca bu ağdaki diğer iki bilgisayar bu ağa erişebilir (bu, intranet olarak bilinir). Eğer web sunucu public yaparsa bu web server aracılığı ile internete bağlanır.
+Port takibi, router aracılığı ile yapılır. Güvenlik duvarları trafiğin bu bağlantı noktalarından geçip geçemeyeceğini belirler. Güvenlik duvarları 2 kategoriye ayrılır:
+	1- Stateful(Aşamalı): Bir bağlantıdaki tüm bilgileri kullanır; Tek bir paketi incelemek yerine, bu güvenlik duvarı, tüm bağlantıya bağlı olarak bir cihazın davranışını inceler. Bir ana bilgisayardan gelen bağlantı kötüyse, tüm cihazı engeller. Çok kaynak tüketir.
+	2- Stateless(Aşamasız): Taek tek paketlerin kabul edilebilir olup olmadığını belirlemek için statik bir kurallar kümesi kullanır. Bu güvenlik duvarları alternatiflerden çok daha az kaynak kullanırken, çok hantaldırlar. Ancak, bu güvenlik duvarları bir dizi ana bilgisayardan büyük miktarda trafik alırken mükemmeldir(Örneğin DDoS).
+
+NOT: Stateful ve Stateless için yeterinci iyi kelime bulamadığım için bunu kullandım. Eğer hali hazırda kullanılan kelimeler varsa iletebilirseniz sevinirim.
