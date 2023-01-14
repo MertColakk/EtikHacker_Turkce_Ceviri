@@ -1,0 +1,21 @@
+Networking
+Network(Ağ)'ü arkadaşların ve sana benzetebiliriz çünkü arkadaşların ve sen hobilerin,yeteneklerin gibi ortak özelliklere sahipsindir ve bu yüzden bir aradasınızdır.
+Başka örnekler olarak, şehiriçi toplu taşımalar örnek gösterilebilir.
+
+Internet
+En büyük network'e internet denir. İlk örneği 1960'ların sonundaki ARPANET'dir. Ancak bildiğimiz tarz internet 1989 yılında Tim Berners-Lee tarafından World Wide Web'in kurulması ile ortaya çıktı fakat o dönemlerde internet bilgi depolamak-paylaşmak gibi işler için kullanılmadı. Yani internet birçok küçük network'ün birbirine bağlanması ile oluşan büyük network'dür. Küçük networklere,private network internete ise public network denir.
+
+Identifying Devices on a Network(Ağdaki cihazların tanımlanması)
+İletişim kurmak ve düzeni sağlamak için cihazların bir ağ üzerinde hem tanımlayıcı hem de tanımlanabilir olması gerekir. Nasıl adımız ve parmak izimizden kim olduğumuzu tanıyorsak ağ içi aygıtların da tanınması için bu gibi yollara ihtiyaçları vardır. Günümüzde adımızı değiştirebiliyoruz fakat parmak izimiz değişmez network içi aygıtlar da buna benzer davranılar. Adları IP iken parmak izleri A Media Access Control (MAC) Addressdir. 
+
+IP Adresi
+Kısaca, bir IP adresi (veya İnternet Protokolü) adresi, bir ağdaki bir ana bilgisayarı belirli bir süre için tanımlamanın bir yolu olarak kullanılabilir, burada bu IP adresi daha sonra IP adresi değişmeden başka bir cihazla ilişkilendirilebilir. 
+IP adresi dörde bölünmüş oktetlerden oluşur. Her bir oktetdeki sayı networkdeki aygıtın özeti niteliği taşır. Sayısı, IP adresleme ve alt ağ oluşturma olarak bilinen bir teknikle hesaplanır. Aynı ağ içerisinde ygıtlar arasında IP adresi benzer olabilir fakat asla aynı olamaz. IP Adresleri, protokoller olarak bilinen bir dizi standardı izler. Bu protokoller ağ oluşturmanın bel kemiğidir ve birçok cihazı aynı dilde iletişim kurmaya zorlar. private IP address, başka aygıtlara gözüken IP adres iken public IP address, internet yani public network'de gözüken IPdir.
+İki cihaz birbirleriyle iletişim kurmak için özel IP adreslerini kullanacaklardır fakat, bu cihazlardan herhangi birinden İnternet'e gönderilen bir data aynı genel IP adresiyle tanımlanacaktır. Public IP addressleri, İnternet Servis Sağlayıcınız (veya ISP'niz) tarafından aylık bir ücret karşılığında verilir bu ücret internet faturanızdır.
+
+MAC Adresi
+Bir ağdaki aygıtların tümü, aygıtın anakartında bulunan, bir mikroçip kartı olan ve bir fiziksel ağ arabirimine sahiptir. Bu ağ arayüzüne, oluşturulduğu fabrikada MAC (Medya Erişim Kontrolü) adresi adı verilen benzersiz bir adres atanır. MAC adresi, ikiye bölünmüş ve iki nokta üst üste işaretiyle ayrılmış on iki karakterli onaltılık bir sayıdır. Bu kolonlar ayırıcı olarak kabul edilir. Örneğin, a4:c3:f0:85:ac:2d. İlk altı karakter, ağ arayüzünü yapan şirketi temsil eder ve son altı karakter benzersiz bir sayıdır.
+MAC adreslerinin bir sıkıntısı spoofing(sahtekarlık) olarak bilinen fake veya "spoofed" olabilmeleridir. Bu adres spoofing, ağa bağlı bir cihaz MAC adresini kullanarak kendisini başka biri olarak tanımlıyormuş gibi davrandığında oluşur. Bu olay yaşandığında, genellikle bir ağda konuşan cihazların güvenilir olduğunu varsayan kötü uygulanmış güvenlik tasarımlarını kırabilir.
+
+PING(ICMP)
+Ping şu an en çok kullanılan temel ağ araçlarından biridir. Ping, aygıtların arasındaki bağlantının performansını (örneğin, bağlantının var olup olmadığını veya güvenilir olup olmadığını) belirlemek için ICMP (Internet Denetim İletisi Protokolü) paketlerini kullanır. ping yapabilme özelliği Windows ve linux gibi işletim sistemlerinde hazırdır. ping hedefIp ile kullanılabilir.
