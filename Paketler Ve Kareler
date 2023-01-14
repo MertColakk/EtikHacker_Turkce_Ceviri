@@ -46,4 +46,4 @@ Verilerin doğru sırada gönderilmesi için her iki bilgisayarın da aynı numa
 	
 TCP Bağlantısını Kapatma
 TCP, bir aygıtı diğer aygıtın tüm verilerini başarıyla aldığını belirledikten sonra bağlantıyı kapatır. TCP bir aygıttaki sistem kaynaklarını daha öncesinde ayırdığından, TCP bağlantılarını mümkün olan en kısa sürede kapatmak gerekir. TCP bağlantısının kapatılmasını başlatmak için, aygıt diğer aygıta bir "FIN" paketi gönderir. Diğer cihaz da bununla beraber onaylamak için bir ACK ile FIN paketi gönderir. İlk cihaz bunu onaylamak için ACK paketi gönderir ve TCP kapanır.
-
+Kaynakça:https://tryhackme.com/
