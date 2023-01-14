@@ -1,0 +1,7 @@
+DNS Kayıt Tipleri
+DNS yalnızca web siteleri için değildir ve birden fazla DNS kaydı türü vardır. Bazı DNS örnekleri:
+	1- A Kayıt: IPv4 adresleri içindir. Örnek olarak 104.26.10.229 verilebilir.
+	2- AAAA Kayıt: IPv6 adresleri içindir. Örnek olarak 2606:4700:20::681a:be5 verilebilir.
+	3- CNAME Kayıt: Bu kayıtlar başka bir alan adına çözümlenir. Örneğin buy.MySite.com CNAME ile shops.shopify.com'a dönüşür.
+	4- MX Kayıt: Bu recordlar, sorguladığınız etki alanının e-postasını işleyen sunucuların adresine çözümlenir.
+	5- TXT Kayıt: Metin tabanlı verilerin depolanabileceği serbest metin alanlarıdır. TXT kayıtlarının birden fazla kullanımı vardır, ancak bazı yaygın olanlar alan adına bir e-posta gönderme yetkisine sahip sunucuları listelemek olabilir. Ayrıca, üçüncü taraf hizmetlerine kaydolurken alan adının sahipliğini doğrulamak için de kullanılabilirler.
