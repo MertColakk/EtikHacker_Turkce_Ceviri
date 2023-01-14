@@ -1,3 +1,4 @@
 HTTP(HyperText Transfer Protocol)(Köprü Metni Aktarım Protokolü): HTML, Resimler, Videolar vb. olsun, web sayfası verilerinin iletilmesi için web sunucularıyla iletişim kurmak için kullanılan kurallar kümesidir. Internetin ilk yillari olan 1989-1991 yılları arasından beri yani Tim Berners-Lee'nin açtığı ilk internet sayfasından beri kullanılmaktadır.
 
 HTTPS(HyperText Transfer Protocol Secure)(Güvenli Köprü Metni Aktarım Protokolü): HTTPS, HTTP'nin güvenli sürümüdür. HTTPS verileri şifrelenir, böylece yalnızca insanların aldığınız ve gönderdiğiniz verileri görmesini engellemekle kalmaz, aynı zamanda doğru web sunucusuyla konuştuğunuza ve kimliğine bürünen bir şey olmadığına dair size güvence verir.
+Kaynakça:https://tryhackme.com/
