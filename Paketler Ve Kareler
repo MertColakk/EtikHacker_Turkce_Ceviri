@@ -1,0 +1,49 @@
+Packets Ve Frames(Paketler Ve Kareler)
+Packetler ve Frameler, birlikte bir bütün oluştururken daha büyük bir bilgi veya mesaj parçası oluşturan küçük veri parçalarıdır. Bunu bir zarfın içine bir zarf koyup göndermek olarak düşünün. İlk zarf, postaladığınız packet olacaktır, ancak bir kez açıldığında, içindeki zarf hala var olur ve data içerir(frame). Bu işleme encapsulation denir. Herhangi bir IP adresi hakkında konuştuğumuzda, packetlerden bahsettiğimizi varsaymalıyız. Eğer encapsulating bilgi kaybolduysa/bozulduysa framelerden konuşuyoruz demektir.
+Packets, ağa bağlı aygıtlar arasında veri iletmenin etkili bir yoludur. Bu veriler küçük parçalar halinde değiş tokuş edildiğinden, bir ağda büyük iletilerin bir kerede gönderilmesinden daha az darboğaz oluşma olasılığı vardır.
+Packetler, gönderilmekte olan paketin türüne bağlı olarak farklı yapılara sahiptir. Ağ, paketin bir aygıtta nasıl işlendiğine ilişkin bir dizi kural görevi gören standartlar ve protokollerle doludur. 
+İnternet protokolünü örnek gösterelim. Bu protokolü kullanan bir paket, ağ üzerinden gönderilen verilere ek bilgi parçaları içeren bir üst bilgi kümesine sahip olacaktır. Bazı üst bilgiler:
+	1- Time To Live: Paketin bir ana bilgisayara ulaşmayı veya networkden kaçmayı başaramazsa ağınızı tıkamaması için bir süre sonu zamanlayıcısı ayarlayarak kendini imha eder.
+	2- Checksum: TCP/IP gibi protokoller için bütünlük denetimi sağlar. Herhangi bir veri değiştirilirse, bu değer beklenenden farklı olur ve bu nedenle bozulur.
+	3- Source Address: Verilerin nereye döneceğini bilmesi gerektiği için paketin gönderildiği cihazın IP adresini bilir.
+	4- Destination Address: Paketin gönderildiği cihazın IP adresidir. Bu üst bilgi sayesinde veriler bir sonraki adımda nereye gideceğini bilir.
+
+TCP/IP(The Three-Way Handshake)(Üç Yönlü El Sıkışması)
+TCP(Transmission Control Protocol), network iletişiminde kullanılan bu kurallardan bir diğeridir. OSI Modeli ile çok fazla benzerlik taşır. TCP / IP protokolü dört katmandan oluşur ve OSI modelinin özetlenmiş hali gibidir. TCP modelinin her katmanına, veri parçası (veya packet) içinden geçerken daha öncesinde sahip olduğu bilgiler eklenir. TCP'nin katmanları şunlardır:
+	1- Application
+    	2- Transport
+    	3- Internet
+    	4- Network Interface
+TCP'nin tanımlayıcı özelliklerinden biri, bağlantı tabanlı olmasıdır; bu, TCP'nin veri gönderilmeden önce hem istemci hem de sunucu görevi gören bir aygıt arasında bir bağlantı kurması gerektiği anlamına gelir. TCP gönderilen dataların hepsini alacağını garanti eder bu olaya Three-Way Handshake(Üçlü el sıkışma) denir. 
+TCP'nin avantajları:
+	1- Verilerin bütünlüğünü garanti eder.
+	2- Birbirlerinin yanlış sırada veri ile dolmasını önlemek için iki cihazı senkronize edebilir.
+	3- Güvenilirlik için çok daha fazla işlem gerçekleştirir.
+TCP'nin dezavantajları:
+	1- İki cihaz arasında güvenilir bir bağlantı gerektirir çünkü eğer küçük bir data parçası alınmazsa, tüm data öbeği kullanılamaz ve yeniden gönderilmesi gerekir. 
+	2- Yavaş bir bağlantısı vardır, bağlantı tüm işlem zamanı boyunca diğer cihazdan ayrılacağı için başka bir cihazı darboğaza sokabilir.
+	3- TCP, UDP'den önemli ölçüde daha yavaştır, çünkü bu protokolü kullanan cihazlar tarafından daha fazla iş (hesaplama) yapılmalıdır.
+TCP paketleri, encapsulation eklenen, üst bilgiler olarak bilinen çeşitli bilgi bölümleri içerir. Bu bölümler:
+	1- Source Port: TCP paketinin gönderileceği, gönderen tarafından açılan bağlantı noktasıdır. Bu değer rastgele seçilir. Bu değer 0-65535 arasındaki bağlantı noktalarından biri rastgele seçilir.
+	2- Destination Port: Bir uygulamanın veya hizmetin uzak ana bilgisayarda (veri alan) çalıştığı bağlantı noktası numarasıdır; örneğin, 80 numaralı bağlantı noktasında çalışan bir web sunucusu verilebilir. Kaynak bağlantı noktasından farklı olarak, bu değer rasgele seçilmez daha öncesinden belirlenmiştir.
+	3- Source IP: Bu, paketi gönderen aygıtın IP adresidir.
+	4- Destianation IP: Paketin gönderilmek istediği aygıtın IP adresidir.
+	5- Sequence Number: Bir bağlantı gerçekleştiğinde, iletilen ilk veri parçasına rastgele bir sayı verilir.
+	6- Acknowledgement Number: Bir veri parçasına sıra numarası verildikten sonra, bir sonraki veri parçasının numarası önceki parçanın bir fazlası olacaktır.
+	7- Checksum: TCP bütünlüğünü sağlayan şey budur. Çıktının hatırlandığı matematiksel bir hesaplama yapılır. Alıcı aygıt matematiksel hesaplamayı gerçekleştirdiğinde, çıktı gönderilenden farklıysa verilerin bozuk olması gerekir.
+	8- Data: Bu üstbilgi, dataların, yani iletilmekte olan bir dosyanın baytlarının depolandığı yerdir.
+	9- Flag: Three-way handshake esnasında paketin her iki aygıt tarafından nasıl işlenmesi gerektiğini belirler. Farklı flagler farklı işlevleri görür:
+	1- SYN: SYN iletisi, handshake sırasında istemci tarafından gönderilen ilk pakettir. Bu paket bir bağlantı başlatmak ve iki cihazı birlikte senkronize etmek için kullanılır 
+	2- SYN/ACK: Bu paket, istemciden gelen senkronizasyon girişimini onaylamak için alıcı aygıt (sunucu) tarafından gönderilir.
+	3- ACK: Onay paketi, istemci veya sunucu tarafından bir dizi iletinin/paketin başarıyla alındığını onaylamak için kullanılabilir.
+	4- DATA: Bir bağlantı kurulduktan sonra, veriler (bir dosyanın baytları gibi) "DATAa" mesajı aracılığıyla gönderilir.
+	5- FIN: İşlem bittikten sonra bağlantının tamamen kapanmasını sağlar.
+	6- RST: Bu paket aniden tüm iletişimi sonlandırır. Bu son çaredir ve işlem sırasında bazı sorunlar olduğunu gösterir. Örneğin, hizmet veya uygulama düzgün çalışmıyorsa veya sistemde düşük kaynaklar gibi hatalar varsa bu paket gönderilir ve işlem sonlandırılır. 
+Verilerin doğru sırada gönderilmesi için her iki bilgisayarın da aynı numara dizisi üzerinde anlaşması gerekir. Bir önceki adımdan sonra yeni paketin numarası bir arttırılır. Bu emir üç adımda kararlaştırılır:
+	1- SYN-Client: Senkronize edilmiş ISN'im 0 bildirimi gönderir.
+	2- SYN/ACK-Server: Senkronize edilmiş ISN'im 500 ve senin 0 olan ISN'ini ACK ile alıyorum anlamında bir bildirim gönderir.
+	3- ACK-Client: 5000 olan ISN'ini ACK ile alıyorum ve benim datamı bir arttırıp 5001 olarak gönderiyorum anlamına gelir.
+	
+TCP Bağlantısını Kapatma
+TCP, bir aygıtı diğer aygıtın tüm verilerini başarıyla aldığını belirledikten sonra bağlantıyı kapatır. TCP bir aygıttaki sistem kaynaklarını daha öncesinde ayırdığından, TCP bağlantılarını mümkün olan en kısa sürede kapatmak gerekir. TCP bağlantısının kapatılmasını başlatmak için, aygıt diğer aygıta bir "FIN" paketi gönderir. Diğer cihaz da bununla beraber onaylamak için bir ACK ile FIN paketi gönderir. İlk cihaz bunu onaylamak için ACK paketi gönderir ve TCP kapanır.
+
