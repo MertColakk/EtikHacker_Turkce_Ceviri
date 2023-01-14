@@ -1,0 +1,18 @@
+Operating System Security(İşletim Sistemi Güvenliği)
+Hardware(Donanım): Bilgisayarın bütün parçaları anlamına gelir. Operating System ise yazılım ile donanım arasında kalan yazılımdır. Çünkü bilgisayar içerisine kurulmuş olan yazılımı bilgisayarın anlayacağı yazılım diline dönüştürür. Eğer telefon,bilgisayar gibi aygıtların güvenliğini düşünüyorsak şu 3 şeyi bilmeliyiz:
+	1-Confidentiality(Mahremiyet):Gizli ve özel dosyaların ve bilgilerin yalnızca tanıdığınız ve güvendiğini kişiler tarafından kullanılabildiğinden emin olmalısınız.
+	2-Integrity(Bütünlük): Kimse sisteminizde veya ağınızda depolanan dosyalarınıza erişememelidir.
+	3-Availability(Kullanılabilirlik): Eğer bilgisayarınıza ve laptopınıza ihtiyacınız var ise hemen erişmelisiniz.Buna availability denir.
+	
+Bazı Zafiyetler
+1-Authentication and Weak Passwords(Kimlik Doğrulama ve Zayıf Parolalar): Authentication, kimliğimizi doğruladığımız işleme denir. Bu işlem local ya da remote sistemlerde gerçekleşebilir. Authentication, üç farklı yol ile kontrol edilir:
+	1-Şifre ya da PIN Kodu. (En çok kullanılan yöntem)
+	2-Parmak izi.
+	3-SMS gönderimi ya da telefon araması.
+
+Şifre ya da PIN kodu kırılması en kolay Authentication yöntemidir. Çünkü kullanıcılar genel olarak 123456,doğum tarihleri,evcil hayvanları ya da çocuklarının adları gibi basit şifreleri koyarlar.
+
+2-Weak File Permissions(Zayıf Dosya İzinleri):Zayıf dosya izinleri, saldırganın gizliliğinize ve bütünlüğünüze saldırmasını kolaylaştırır. WFP,erişilmemesi gereken dosyalara erişim izni verdiği için verileriniz kolay bir şekilde çalınabilir. Ayrıca, düzenleyememeleri gereken dosyaları düzenleyebildikleri için Integrity de zor duruma düşer.
+
+3-Access to Malicious Programs(Kötü Amaçlı Programlara Erişim): Malicious Programlar Confidentiality,Integrity ve availabilitye saldırmanın yollarındandır. Örnek olarak Trojan Horses verilebilir. Trojan Horsesda saldırgan sisteminize erişir ve datalarınızı okuyup değiştirebilir. O zaman Trojan,Confidentialitye ve Integritye zarar verir.
+Bazı programlar ise Availabilitye saldırırlar. Örnek olarak ransomware verilebilir. Ransomware kullanıcının dosyalarını şifreler ve bu sayede dosyalar okunamaz dosyaların açılması karşılığında sizden fidye talep edebilirler.
