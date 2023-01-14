@@ -5,3 +5,4 @@ ARP'ın Çalışma Mantığı
 Bir ağdaki her cihazın, önbellek adı verilen bilgilerin depolanacağı bir defteri vardır. ARP protokolü bağlamında, bu önbellek ağdaki diğer aygıtların tanımlayıcılarını depolar. Bu iki tanımlayıcıyı (IP adresi ve MAC adresi) birlikte eşlemek için, ARP protokolü iki tür ileti gönderir:
 	1- ARP Request(ARP İsteği):Cihaz tarafından bir ağda bulunan diğer tüm cihazlara, cihazın MAC adresinin istenen IP adresiyle eşleşip eşleşmediğini soran bir mesaj yayınlanır.
 	2- ARP Reply(ARP Yanıtı): Eğer cihaz talep edilmiş IP adresini biliyorsa, ARP yanıtı, bunu onaylamak için ilk cihaza döndürülür. İlk cihaz şimdi bunu hatırlayacak ve önbelleğinde (bir ARP girişi) saklayacaktır. 
+Kaynak:https://tryhackme.com/
