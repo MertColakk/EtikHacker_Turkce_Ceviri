@@ -1,0 +1,6 @@
+Güvenlik Duvarı
+Güvenlik duvarı, hangi trafiğin girdiğine hangi trafiğin çıktığına izin veren ve izni belirlemekten sorumlu ağ içindeki cihazdır. Ağ içi güvenliği sağlar. Yönetici, bir güvenlik duvarını, aşağıdakiler gibi çeşitli etkenlere dayanarak trafiğin bir ağa girmesine veya ağdan çıkmasına izin verecek veya engelleyecek şekilde yapılandırabilir, Aşağıdaki sorular ile çalışma mantığını anlayabilirsiniz:	
+	1- Trafik nereden geliyor? (Güvenlik duvarına belirli bir ağdan gelen trafiği kabul etmesi/reddetmesi söylendi mi?)
+	2- Trafik nereye gidiyor? (Güvenlik duvarına belirli bir ağa yönelik trafiği kabul etmesi/reddetmesi söylendi mi?)
+	3- Trafik hangi bağlantı noktası içindir? (Güvenlik duvarına yalnızca 80 numaralı bağlantı noktasına yönelik trafiği kabul etmesi/reddetmesi söylendi mi?)
+	4- Trafik hangi protokolü kullanıyor? (Güvenlik duvarına UDP, TCP veya her ikisi olan trafiği kabul etmesi/reddetmesi söylendi mi?)
