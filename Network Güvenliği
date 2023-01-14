@@ -1,0 +1,25 @@
+Network Security(Ağ Güvenliği)
+Computer Network(Bilgisayar Ağı) birbiri ile bağlı bilgisayarlar anlamına gelir. Ağ güvenliği birbiri ile bağlı olan aygıtları korumaya yönelik çalışmaktadır. Hardware solutions kavramı ağ güvenliğinizi korumak için ağınızda kurduğunuz cihazları ifade eder bunlara hardware denir.
+Bazı hardware appliances(araçları):
+	1-Firewall appliance(cihazı): Firewall,belirlenen kurallar içerisindeki bağlantıları bloklar veya izin verir. Cihaza neyin girip neyin çıkacağını kısıtlar.
+	2-Intrusion Detection System (IDS) appliance(cihazı): IDS, sistem ve ağ izinsiz girişlerini ve izinsiz giriş girişimlerini algılar. Saldırganların ağınıza girme girişimlerini tespit etmeye çalışır.
+	3-Intrusion Prevention System (IPS) appliance(cihazı): IPS, algılanan izinsiz girişleri ve izinsiz giriş girişimlerini engeller. Saldırganların ağınıza girmesini engellemeyi amaçlar.
+	4-Virtual Private Network (VPN) appliance(cihazı): VPN, ağ trafiğinin üçüncü bir tarafça okunamamasını veya değiştirilememesini sağlar. Gönderilen verilerin gizliliğini (gizliliğini) ve bütünlüğünü korur.
+Bunlar gibi donanımlar harici bazı security softwareları vardır:
+	1-Antivirus Yazılımı: Bilgisayardaki veya telefonun içerisindeki antivirusler zararlı dosyaları tanımlayıp engelleyip çalışmasını önler.
+	2-Yönetici Güvenlik Duvarı: Bir donanım aygıtı olan firewall applianceın aksine, ana firewall sisteminizin bir parçası olarak gelen bir programdır veya tercihe bağlı olarak sisteminize sonradan yükleyebilirsiniz.
+	
+Methodology
+Bir networkü kırmak için yedi farklı adım vardır. Nasıl bir işi düşünüp planlayıp yapıyorsak network kırma durumu için de bu geçerlidir.
+	1-Recon(Gözlem): Hedef hakkında saldırganın bilgi topladığı kısımdır. Bu bilgi, server tipi,operating system,IP adresi,kullanıcının adı veya mail adresi gibi saldırganın işine yarayacak bilgiler olabilir. 
+	2-Weaponization(Silahlanma): Bu aşamada saldırgan yapacağı saldırı için hedefine yönelik bir dosya hazırlar.
+	3-Delivery(Teslim): Bu aşamada saldırgan hazırladığı malicious fileı;malicious link,USB,mail gibi yöntemler ile hedefine ulaştırmaya çalışır.
+	4-Exploitation(Kullanma): Eğer hedef dosyayı açarsa sistem,malicious bileşeni çalıştırır.
+	5-Installation(Kurulum): Eğer önceki hedef kurulum içeriyorsa kurulum bu aşamada yapılır yoksa bir kurulum gerçekleşmez.
+	6-Command & Control(C2): Başırıyla atlatılmış 5 basamaktan sonra sistem saldırganın yönettiği bir hale gelmiştir.
+	7-Actions on Objectives(Hedefe Yönelik Hareket): Sistemin kontrolu kazanıldıktan sonra saldırgan Data Exfiltration(Data çalmak) gibi amaçlarla yapmak istediği saldırıyı gerçekleştirir.
+
+Server Tipleri:
+	1-FTP Sunucu: Dosya Aktarım Protokolü anlamına gelir ve dosyaları makineler arasında aktarmak için kullanılır.
+	2-SSH Sunucu: Secure Shell anlamına gelir ve güvenli uzaktan oturum açmak için kullanılır. Başka bir deyişle, uzaktaki bir sistemde komutları güvenli bir şekilde yürütmenizi sağlar.
+	3-HTTP Sunucu: Köprü Metni Aktarım Protokolü anlamına gelir ve web için kullanılır. Web'de gezinirken, HTTP veya HTTPS kullanıyorsunuzdur. HTTPS, HTTP'nin güvenli (şifreli) sürümüdür.
