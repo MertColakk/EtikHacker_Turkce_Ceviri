@@ -1,0 +1,14 @@
+DNS(Domain Name System)(Alan Adı Sistemi)
+Sunucunun IP'si yerine bir ad kullanılmasıdır. Örneğin 104.21.229.10 IP adresinin DNS'i Google'dır.
+
+Domain Hierarchy(Alan Hiyerarşisi)
+TLD(Top-Level Domains)(Üst Düzey Alan)
+Bir domainin en kesin ve güvenilir olduğu domain adresidir. Örnek olarak ".com" ".gov" ".edu" verilebilir. TLD çeşitleri:
+	1- gTLD (Generic Top Level)(Genel Üst Düzey Alan): Genel olarak MySite.com gibi alan adlarını ifade eder.
+	2- ccTLD (Country Code Top Level Domain)(Ülke Kodlu Üst Düzey Alan): Belirli bir coğrafya için kullanılır örneğin MySite.com.tr burdaki .tr ccTLD'dir.
+
+Second-Level Domain(İkinci Seviye Alan)
+Bir alan adı kaydedilirken, ikinci düzey etki alanı 63 karakter + TLD ile sınırlıdır ve yalnızca a-z 0-9 ve tireler kullanabilir (tirelerle başlayamaz veya bitemez veya ardışık tirelere sahip olamaz).
+
+Subdomain(Alt Alan)
+Subdomain, Second-Level Domainin sol tarıfında onu ayırmak için kullanılan bir nokta ile yazılır. Örnek olarak "admin.MySite.com" verilir bu sitede "admin." kısmı subdomaindir. Subdomain, 63 karakterle sınırlıdır ve Second-Level Domain ile aynı oluşturma kısıtlarına sahiptir yalnızca a-z 0-9 ve tireleri kullanabilir. Birden fazla subdomain ayrılabilir. Örnek olarak "telecom.servers.MySite.com" verilebilir ancak "telecom" gibi subdomainlerin uzunluğu 253 karakter veya daha az tutulmalıdır. Alan adınız için oluşturabileceğiniz alt alan adı sayısında bir sınırlama yoktur.
