@@ -23,3 +23,4 @@ Server Tipleri:
 	1-FTP Sunucu: Dosya Aktarım Protokolü anlamına gelir ve dosyaları makineler arasında aktarmak için kullanılır.
 	2-SSH Sunucu: Secure Shell anlamına gelir ve güvenli uzaktan oturum açmak için kullanılır. Başka bir deyişle, uzaktaki bir sistemde komutları güvenli bir şekilde yürütmenizi sağlar.
 	3-HTTP Sunucu: Köprü Metni Aktarım Protokolü anlamına gelir ve web için kullanılır. Web'de gezinirken, HTTP veya HTTPS kullanıyorsunuzdur. HTTPS, HTTP'nin güvenli (şifreli) sürümüdür.
+Kaynakça:https://tryhackme.com/
