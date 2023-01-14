@@ -1,0 +1,10 @@
+Subnetting(Alt Ağlama)
+Subnetting(Alt Ağlama), bir ağı kendi içinde daha küçük, minyatür ağlara bölmek demektir. Örnek olarak şirketinizi finans,IT,insan kaynakları gibi alt parçalara bölmek verilebilir. Ağ yöneticileri, bir ağın belirli bölümlerini bunu yansıtacak şekilde kategorilere ayırmak ve atamak için Alt Ağlamayı kullanır. Alt Ağlama, subnet mask adı verilen bir sayıyla temsil edilen, ağa sığabilecek ana bilgisayar sayısının bölünmesiyle elde edilir. 
+Alt Ağlar IP'yi 3 farklı şekilde kullanır:
+	1- Ağ adresini tanımlama:Bu adres, gerçek ağın başlangıcını tanımlar ve bir ağın varlığını tanımlamak için kullanılır.
+	2- Yönetici adresini tanımlama:Subnete bağlı olan cihazları tanımlamak için IP adresini kullanır.
+	3- Varsayılan geçişi tanımlama:Ağ içerisinde bulunan başka bir ağa bilgi gönderebilen bir aygıta tanımlanan özel adrese denir.
+Alt Ağlama şu avantajları sağlar:
+	1- Verimlilik
+	2- Güvenlik
+	3- Tam Kontrol 
