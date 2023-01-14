@@ -4,3 +4,4 @@ Güvenlik duvarı, hangi trafiğin girdiğine hangi trafiğin çıktığına izi
 	2- Trafik nereye gidiyor? (Güvenlik duvarına belirli bir ağa yönelik trafiği kabul etmesi/reddetmesi söylendi mi?)
 	3- Trafik hangi bağlantı noktası içindir? (Güvenlik duvarına yalnızca 80 numaralı bağlantı noktasına yönelik trafiği kabul etmesi/reddetmesi söylendi mi?)
 	4- Trafik hangi protokolü kullanıyor? (Güvenlik duvarına UDP, TCP veya her ikisi olan trafiği kabul etmesi/reddetmesi söylendi mi?)
+Kaynakça:https://tryhackme.com/
