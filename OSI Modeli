@@ -32,3 +32,4 @@ OSI modeli(Open Systems Interconnection Model), ağ oluşturmada kullanılan mut
 2. Katman - Data Link(Veri Bağlantısı): Verilerin iletimi için uygun bir biçimde yönlendirecek bir ortam sunmak veri bağlantı katmanının işidir.
 
 1. Katman - Physical(Fiziksel): Bu katman ağda kullanılan donanımın fiziksel bileşenlerine başvurur ve bulacağınız en düşük katmandır. Cihazlar, ikili numaralandırma sisteminde (1'ler ve 0'lar) birbirleri arasında veri aktarmak için elektrik sinyallerini kullanır. Ağ katmanından bir paket alır ve alıcı uç noktanın fiziksel MAC adresini ekler. Ağ özellikli her bilgisayarın içinde, onu tanımlamak için benzersiz bir MAC adresiyle birlikte gelen bir Network Interface Card(NIC) bulunur.
+Kaynakça:https://tryhackme.com/
