@@ -1,0 +1,8 @@
+VPN(Virtual Private Network)(Sanal Özel Ağ)
+PPP: PPP, teknolojisi VPN verisini şifreler ve daha sonrasında doğrulanmasını sağlar.
+PPTP: Noktadan Noktaya Tünel Protokolü (PPTP), PPP'den gelen verilerin bir ağ içerisinde dolaşmasına ve ağdan ayrılmasına izin veren teknolojidir. PPTP'nin kurulumu çok kolaydır ve çoğu cihaz tarafından desteklenir. Bununla birlikte, alternatiflere kıyasla zayıf bir şekilde şifrelenmiştir.
+IPSec: Internet Protokolü Güvenliği (IPsec), varolan Internet Protokolü (IP) çerçevesini kullanarak verileri şifreler. IPSec'in alternatiflere kıyasla kurulması zordur; ancak, başarılı olursa, güçlü şifrelemeye sahiptir ve birçok cihazda da desteklenir.
+VPN'in faydaları:
+	1- Gizlilik sunması.
+	2- Anonimlik sunması.
+	3- Farklı coğrafi konumlardaki ağların bağlanmasına izin vermesi.
