@@ -1,0 +1,21 @@
+Identification and Authentication Failure(Kimlik Doğrulama ve Kimlik Doğrulama Hatası)
+Tanımlama, bir kullanıcıyı benzersiz bir şekilde tanımlama yeteneğini ifade eder. Buna karşılık, kimlik doğrulama, kullanıcının iddia ettiği kişi olduğunu kanıtlama becerisini ifade eder. 
+Zayıflık örnekleri:
+	1-Brute Force:Geçerli oturum açma kimlik bilgilerini bulmak için genellikle otomatik araçlar kullanarak birçok parola denemesine izin verme.
+	2-Zayıf Şifre
+	3-Dosyada Saklama
+
+Broken Access Control(Kırık Erişim Kontrolü)
+Erişim kontrolü, her kullanıcının yalnızca rolü veya işi ile ilgili dosyalara (belgeler, resimler vb.) erişebilmesini sağlar. Zayıflıkları:
+	1-Kullanıcılara ihtiyaç duyduklarından daha fazla erişim izni vermek.
+	2-Benzersiz tanımlayıcısını kullanarak başka birinin hesabını görüntüleyebilme veya değiştirebilme.
+	3-Kimliği doğrulanmamış bir kullanıcı olarak kimlik doğrulamagerektiren sayfalara göz atabilme. 
+
+Injection(Enjeksiyon)
+Injection saldırısı, web uygulamasında kullanıcının girdilerinin bir parçası olarak kötü amaçlı kod ekleyebileceği bir güvenlik açığı anlamına gelir. Bu güvenlik açığının bir nedeni, kullanıcı girişinin uygun şekilde doğrulanmaması ve temizlenmemesidir.
+
+Cryptographic Failures(Şifreleme Hataları)
+Cryptography, verilerin şifrelenmesi ve şifresinin çözülmesi süreçlerine odaklanır. Encryption, açık metni şifreli metne dönüştürür ki bu, şifresini çözecek gizli anahtara sahip olmayan insanlar için anlamsız olmalıdır.Diğer bir deyişle encryption, kimsenin gizli anahtarı bilmeden verileri okuyamamasını sağlar. Decryption, gizli anahtarı kullanarak şifreli metni orijinal temiz metne dönüştürür. Bazı Cryptographic Failure örnekleri şunlardır:
+	1-Hassas verileri açık metin olarak göndermek, örneğin HTTPS yerine HTTP kullanarak. HTTP, web'e erişmek için kullanılan protokoldür, HTTPS ise HTTP'nin güvenli sürümüdür. Diğerleri HTTP üzerinden gönderdiğiniz her şeyi okuyabilir, ancak HTTPS'yi okuyamaz.
+	2-Zayıf bir kriptografik algoritmaya güvenmek. 
+	3-Şifreleme işlevleri için varsayılan veya zayıf anahtarların kullanılması. 
